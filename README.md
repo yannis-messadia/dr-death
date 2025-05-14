@@ -1,5 +1,6 @@
-######### Dr Death - Analyse des meurtres de Harold Shipman avec Power BI
-# Veille technologique : Power BI 
+# Dr Death - Analyse des meurtres de Harold Shipman avec Power BI
+
+A/- Veille technologique : Power BI 
 
 1.  Introduction à Power BI :
 Power BI est une plateforme d’analyse et de visualisation de données développée par Microsoft. Elle permet de se connecter à de nombreuses sources de données, de les transformer, puis de créer des rapports interactifs et des tableaux de bord visuels. Il est très utilisée en entreprise, Power BI facilite la prise de décisions data-driven grâce à une interface intuitive et des outils puissants de modélisation.
