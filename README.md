@@ -3,12 +3,14 @@
 A/- Veille technologique : Power BI 
 
 1.  Introduction à Power BI :
+
 Power BI est une plateforme d’analyse et de visualisation de données développée par Microsoft. Elle permet de se connecter à de nombreuses sources de données, de les transformer, puis de créer des rapports interactifs et des tableaux de bord visuels. Il est très utilisée en entreprise, Power BI facilite la prise de décisions data-driven grâce à une interface intuitive et des outils puissants de modélisation.
 
-2.  Notion clé : le Dashboard
+3.  Notion clé : le Dashboard
+
 Un dashboard (ou tableau de bord) est une interface graphique qui regroupe plusieurs visualisations de données en un seul écran. Son objectif est de synthétiser des informations clés de manière claire et interactive pour permettre une lecture rapide et une prise de décision éclairée. Les éléments clés dans le dashboard : Graphiques (barres, lignes, secteurs…), KPIs (indicateurs de performance), Filtres dynamiques, Cartes géographiques
 
-3.  Avantages de Power BI :
+5.  Avantages de Power BI :
   * Gratuit en local 
   * Large connectivité : Compatible avec Excel, CSV, SQL, Azure, API web, etc.
   * Fonctionnement par glisser-déposer, facile à prendre en main.
