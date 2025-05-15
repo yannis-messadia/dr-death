@@ -46,3 +46,21 @@ Un dashboard (ou tableau de bord) est une interface graphique qui regroupe plusi
     * Cartes thermiques : intensité de valeurs sur des zones
     * Tableaux de bord KPI : suivi de performance
     * Slicers : filtres interactifs pour explorer les données
+
+B/- Contexte :
+Ce projet vise à analyser les meurtres commis par Harold Shipman, l’un des tueurs en série les plus prolifiques de l’histoire du Royaume-Uni, à l’aide de Power BI. Deux fichiers de données sont utilisés :
+* shipman-confirmed-victims.csv : Contient la liste des victimes confirmées de Shipman, avec leur nom, âge, sexe, date et lieu du décès. Utilisé pour analyser les profils des victimes et l’évolution temporelle des meurtres.
+* shipman-times-comparison.csv : Compare les heures de décès des patients de Shipman à celles des patients d’autres médecins généralistes. Utilisé pour identifier un schéma horaire anormal dans les décès.
+
+C/- Problématique étudiée :
+Quels types de personnes Harold Shipman a-t-il assassinées, et quand sont-elles mortes ?
+
+D/- Analyse de données : 
+a. Répartition par sexe :
+Sur l’ensemble des victimes confirmées, environ 80 % étaient des femmes, contre seulement 20 % d’hommes. Cette surreprésentation féminine suggère une stratégie ciblée de la part de Shipman, qui exploitait probablement la vulnérabilité des patientes âgées vivant seules. Cette disparité, statistiquement significative, met en évidence un biais sexuel marqué dans ses meurtres.
+b. Répartition des âges :
+L’analyse de la variable "âge" montre que plus de 75 % des victimes avaient entre 70 et 90 ans, avec une moyenne d’âge d’environ 76 ans. Cette distribution fortement asymétrique vers la droite indique que Shipman visait essentiellement des personnes âgées, souvent considérées comme en fin de vie, ce qui rendait ses actes plus difficiles à détecter. Les personnes de moins de 60 ans représentaient moins de 5 % des victimes.
+c. Évolution temporelle des meurtres :
+La répartition annuelle des décès met en évidence une intensification progressive de ses meurtres : près de 60 % des décès sont concentrés sur les dix dernières années (1988–1998), avec un pic autour de 1995 à 1998. Cette montée en fréquence témoigne d’une escalade dans son comportement criminel, potentiellement liée à un sentiment d’impunité croissant.
+d. Lieu des décès :
+Plus de 90 % des décès sont survenus à domicile, lieu dans lesquel Shipman exerçait un contrôle total et bénéficiait de la confiance de ses patients. Cette donnée confirme qu’il agissait dans un environnement maîtrisé, limitant ainsi les risques de suspicion externe ou d’intervention d’autres professionnels de santé.
