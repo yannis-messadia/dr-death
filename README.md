@@ -1,83 +1,87 @@
-# Dr Death - Analyse des meurtres de Harold Shipman avec Power BI
+# Dr Death - Analysis of Harold Shipman's Murders with Power BI
 
-A/- Veille technologique : Power BI 
+A/- Technological Watch: Power BI
 
-1.  Introduction à Power BI :
+1. Introduction to Power BI:
 
-Power BI est une plateforme d’analyse et de visualisation de données développée par Microsoft. Elle permet de se connecter à de nombreuses sources de données, de les transformer, puis de créer des rapports interactifs et des tableaux de bord visuels. Il est très utilisée en entreprise, Power BI facilite la prise de décisions data-driven grâce à une interface intuitive et des outils puissants de modélisation.
+Power BI is a data analysis and visualization platform developed by Microsoft. It allows connection to many data sources, data transformation, and creation of interactive reports and visual dashboards. It is widely used in business, and Power BI facilitates data-driven decision-making thanks to its intuitive interface and powerful modeling tools.
 
-3.  Notion clé : le Dashboard
+3. Key Concept: the Dashboard
 
-Un dashboard (ou tableau de bord) est une interface graphique qui regroupe plusieurs visualisations de données en un seul écran. Son objectif est de synthétiser des informations clés de manière claire et interactive pour permettre une lecture rapide et une prise de décision éclairée. Les éléments clés dans le dashboard : Graphiques (barres, lignes, secteurs…), KPIs (indicateurs de performance), Filtres dynamiques, Cartes géographiques
+A dashboard is a graphical interface that brings together multiple data visualizations on a single screen. Its goal is to summarize key information clearly and interactively to enable quick understanding and informed decision-making. Key elements in the dashboard: Charts (bar, line, pie…), KPIs (key performance indicators), Dynamic filters, Geographic maps
 
-5.  Avantages de Power BI :
-  * Gratuit en local 
-  * Large connectivité : Compatible avec Excel, CSV, SQL, Azure, API web, etc.
-  * Fonctionnement par glisser-déposer, facile à prendre en main.
-  * Actualisation automatique : Si la source est connectée, les données peuvent se mettre à jour automatiquement.
-  * Possibilité de publier les rapports via Power BI Service (version cloud).
-  * Personnalisation avce des visualisations et des filtres.
+5. Advantages of Power BI:
 
+* Free locally
+* Broad connectivity: Compatible with Excel, CSV, SQL, Azure, web APIs, etc.
+* Drag-and-drop functionality, easy to use.
+* Automatic refresh: If the source is connected, data can be updated automatically.
+* Ability to publish reports via Power BI Service (cloud version).
+* Customization with visualizations and filters.
 
-4. Limites et inconvénients : 
-    * Apprentissage technique nécessaire pour les fonctionnalités avancées (langage DAX, Power Query M).
-    * Fonctionnalités restreintes sur la version gratuite, notamment pour le partage dans Power BI Service.
-    * L’outil peut ralentir avec de très gros volumes de données mal optimisés.
+4. Limitations and Disadvantages:
 
-5. Fonctionnalités principales :
-    * Connexion à plusieurs sources : fichiers locaux, bases de données, services cloud, API web…
-    * Transformation des données via l’éditeur Power Query (nettoyage, filtrage, fusion…).
-    * Modélisation : création de relations entre tables, calculs avancés avec DAX.
-    * Création de rapports interactifs : graphiques dynamiques, filtres, indicateurs de performance, cartes…
-    * Publication & collaboration : partage des rapports sur le cloud grâce à Power BI Service.
+   * Technical learning required for advanced features (DAX language, Power Query M).
+   * Limited features in the free version, especially for sharing in Power BI Service.
+   * The tool can slow down with very large, unoptimized data volumes.
 
-6. Types de sources de données compatibles :
-    * Fichiers plats : Excel, CSV, JSON, XML
-    * Bases de données : SQL Server, MySQL, PostgreSQL, Oracle…
-    * Services cloud : Azure, Salesforce, Google Analytics, SharePoint…
-    * API Web : extraction de données via une URL
-    * Sources locales : import manuel depuis l’ordinateur
+5. Main Features:
 
-7. Visualisations:
-    * Graphiques à barres / colonnes : comparaison entre catégories
-    * Graphiques linéaires : analyse d’évolution dans le temps
-    * Graphiques en secteurs / donuts : répartition des données
-    * Cartes : visualisation géographique
-    * Cartes thermiques : intensité de valeurs sur des zones
-    * Tableaux de bord KPI : suivi de performance
-    * Slicers : filtres interactifs pour explorer les données
+   * Connection to multiple sources: local files, databases, cloud services, web APIs…
+   * Data transformation via Power Query editor (cleaning, filtering, merging…).
+   * Modeling: creating relationships between tables, advanced calculations with DAX.
+   * Creation of interactive reports: dynamic charts, filters, performance indicators, maps…
+   * Publishing & collaboration: sharing reports on the cloud via Power BI Service.
 
-B/- Contexte :
+6. Types of Compatible Data Sources:
 
-Ce projet vise à analyser les meurtres commis par Harold Shipman, l’un des tueurs en série les plus prolifiques de l’histoire du Royaume-Uni, à l’aide de Power BI. Deux fichiers de données sont utilisés :
-* shipman-confirmed-victims.csv : Contient la liste des victimes confirmées de Shipman, avec leur nom, âge, sexe, date et lieu du décès. Utilisé pour analyser les profils des victimes et l’évolution temporelle des meurtres.
-* shipman-times-comparison.csv : Compare les heures de décès des patients de Shipman à celles des patients d’autres médecins généralistes. Utilisé pour identifier un schéma horaire anormal dans les décès.
+   * Flat files: Excel, CSV, JSON, XML
+   * Databases: SQL Server, MySQL, PostgreSQL, Oracle…
+   * Cloud services: Azure, Salesforce, Google Analytics, SharePoint…
+   * Web APIs: data extraction via URL
+   * Local sources: manual import from computer
 
-C/- Problématique étudiée :
+7. Visualizations:
 
-Quels types de personnes Harold Shipman a-t-il assassinées, et quand sont-elles mortes ?
+   * Bar / column charts: comparison between categories
+   * Line charts: time evolution analysis
+   * Pie / donut charts: data distribution
+   * Maps: geographic visualization
+   * Heat maps: value intensity on areas
+   * KPI dashboards: performance tracking
+   * Slicers: interactive filters to explore data
 
-D/- Analyse de données :
+B/- Context:
 
-a. Répartition par sexe :
+This project aims to analyze the murders committed by Harold Shipman, one of the most prolific serial killers in UK history, using Power BI. Two datasets are used:
 
-Sur l’ensemble des victimes confirmées, environ 80 % étaient des femmes, contre seulement 20 % d’hommes. Cette surreprésentation féminine suggère une stratégie ciblée de la part de Shipman, qui exploitait probablement la vulnérabilité des patientes âgées vivant seules. Cette disparité, statistiquement significative, met en évidence un biais sexuel marqué dans ses meurtres.
+* shipman-confirmed-victims.csv: Contains the list of Shipman's confirmed victims, with their name, age, gender, date and place of death. Used to analyze victim profiles and the timeline of the murders.
+* shipman-times-comparison.csv: Compares the time of death of Shipman's patients to those of other general practitioners. Used to identify an abnormal hourly pattern in the deaths.
 
-b. Répartition des âges :
+C/- Research Question:
 
-L’analyse de la variable "âge" montre que plus de 75 % des victimes avaient entre 70 et 90 ans, avec une moyenne d’âge d’environ 76 ans. Cette distribution fortement asymétrique vers la droite indique que Shipman visait essentiellement des personnes âgées, souvent considérées comme en fin de vie, ce qui rendait ses actes plus difficiles à détecter. Les personnes de moins de 60 ans représentaient moins de 5 % des victimes.
+What kinds of people did Harold Shipman kill, and when did they die?
 
-c. Évolution temporelle des meurtres :
+D/- Data Analysis:
 
-La répartition annuelle des décès met en évidence une intensification progressive de ses meurtres : près de 60 % des décès sont concentrés sur les dix dernières années (1988–1998), avec un pic autour de 1995 à 1998. Cette montée en fréquence témoigne d’une escalade dans son comportement criminel, potentiellement liée à un sentiment d’impunité croissant.
+a. Gender Distribution:
 
-d. Lieu des décès :
+Among all confirmed victims, around 80% were women, compared to only 20% men. This female overrepresentation suggests a targeted strategy by Shipman, who likely exploited the vulnerability of elderly women living alone. This disparity, statistically significant, highlights a strong gender bias in his murders.
 
-Plus de 90 % des décès sont survenus à domicile, lieu dans lesquel Shipman exerçait un contrôle total et bénéficiait de la confiance de ses patients. Cette donnée confirme qu’il agissait dans un environnement maîtrisé, limitant ainsi les risques de suspicion externe ou d’intervention d’autres professionnels de santé.
+b. Age Distribution:
 
-e. Répartition horaire des décès : comparaison entre Shipman et les autres médecins 
+Analysis of the "age" variable shows that over 75% of victims were between 70 and 90 years old, with an average age of about 76. This heavily right-skewed distribution indicates that Shipman primarily targeted elderly individuals, often considered to be at the end of life, which made his actions more difficult to detect. People under 60 accounted for less than 5% of victims.
 
-L’analyse de la répartition des décès par heure révèle une anomalie comportementale majeure. Chez les patients des autres médecins généralistes, les décès sont répartis de manière relativement uniforme sur 24 heures, avec une légère concentration naturelle pendant la nuit et en début de matinée, correspondant aux pics de mortalité typiques observés en gériatrie.
-En revanche, chez les patients d’Harold Shipman, plus de 60 % des décès sont concentrés entre 13h et 17h, soit en plein après-midi. Cette surconcentration n’a aucune justification médicale et contraste fortement avec les courbes de mortalité normales. Ce pic artificiel correspond aux horaires de consultation de Shipman, ce qui laisse fortement supposer qu’il administrait délibérément des substances létales durant ses visites.
-Ce schéma horaire répétitif constitue une anomalie statistique manifeste. Il aurait pu être détecté plus tôt par une surveillance des dossiers médicaux ou une analyse des certificats de décès. Cette donnée est l’un des indices clés qui a permis de confirmer l’intentionnalité des meurtres.
+c. Temporal Evolution of Murders:
 
+The yearly distribution of deaths shows a progressive intensification of his killings: nearly 60% of deaths occurred in the last ten years (1988–1998), with a peak between 1995 and 1998. This increase in frequency reflects an escalation in his criminal behavior, possibly linked to a growing sense of impunity.
+
+d. Place of Death:
+
+More than 90% of deaths occurred at home, where Shipman had total control and the trust of his patients. This confirms that he acted in a controlled environment, thereby minimizing the risk of external suspicion or intervention by other healthcare professionals.
+
+e. Time Distribution of Deaths: comparison between Shipman and other doctors
+
+The analysis of death times reveals a major behavioral anomaly. For patients of other general practitioners, deaths are relatively evenly distributed over 24 hours, with a natural slight concentration during the night and early morning, corresponding to typical geriatric mortality peaks.
+In contrast, for Harold Shipman's patients, over 60% of deaths occurred between 1 PM and 5 PM, right in the afternoon. This concentration has no medical justification and strongly contrasts with normal mortality curves. This artificial peak matches Shipman’s consultation hours, strongly suggesting he deliberately administered lethal substances during his visits.
+This repetitive time pattern constitutes a clear statistical anomaly. It could have been detected earlier through medical record monitoring or death certificate analysis. This data point is one of the key clues that helped confirm the intentionality of the murders.
