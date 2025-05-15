@@ -48,11 +48,13 @@ Un dashboard (ou tableau de bord) est une interface graphique qui regroupe plusi
     * Slicers : filtres interactifs pour explorer les données
 
 B/- Contexte :
+
 Ce projet vise à analyser les meurtres commis par Harold Shipman, l’un des tueurs en série les plus prolifiques de l’histoire du Royaume-Uni, à l’aide de Power BI. Deux fichiers de données sont utilisés :
 * shipman-confirmed-victims.csv : Contient la liste des victimes confirmées de Shipman, avec leur nom, âge, sexe, date et lieu du décès. Utilisé pour analyser les profils des victimes et l’évolution temporelle des meurtres.
 * shipman-times-comparison.csv : Compare les heures de décès des patients de Shipman à celles des patients d’autres médecins généralistes. Utilisé pour identifier un schéma horaire anormal dans les décès.
 
 C/- Problématique étudiée :
+
 Quels types de personnes Harold Shipman a-t-il assassinées, et quand sont-elles mortes ?
 
 D/- Analyse de données :
@@ -72,3 +74,10 @@ La répartition annuelle des décès met en évidence une intensification progre
 d. Lieu des décès :
 
 Plus de 90 % des décès sont survenus à domicile, lieu dans lesquel Shipman exerçait un contrôle total et bénéficiait de la confiance de ses patients. Cette donnée confirme qu’il agissait dans un environnement maîtrisé, limitant ainsi les risques de suspicion externe ou d’intervention d’autres professionnels de santé.
+
+e. Répartition horaire des décès : comparaison entre Shipman et les autres médecins 
+
+L’analyse de la répartition des décès par heure révèle une anomalie comportementale majeure. Chez les patients des autres médecins généralistes, les décès sont répartis de manière relativement uniforme sur 24 heures, avec une légère concentration naturelle pendant la nuit et en début de matinée, correspondant aux pics de mortalité typiques observés en gériatrie.
+En revanche, chez les patients d’Harold Shipman, plus de 60 % des décès sont concentrés entre 13h et 17h, soit en plein après-midi. Cette surconcentration n’a aucune justification médicale et contraste fortement avec les courbes de mortalité normales. Ce pic artificiel correspond aux horaires de consultation de Shipman, ce qui laisse fortement supposer qu’il administrait délibérément des substances létales durant ses visites.
+Ce schéma horaire répétitif constitue une anomalie statistique manifeste. Il aurait pu être détecté plus tôt par une surveillance des dossiers médicaux ou une analyse des certificats de décès. Cette donnée est l’un des indices clés qui a permis de confirmer l’intentionnalité des meurtres.
+
