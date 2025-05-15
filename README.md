@@ -68,20 +68,31 @@ a. Gender Distribution:
 
 Among all confirmed victims, around 80% were women, compared to only 20% men. This female overrepresentation suggests a targeted strategy by Shipman, who likely exploited the vulnerability of elderly women living alone. This disparity, statistically significant, highlights a strong gender bias in his murders.
 
+![Graphique analyse](results/répartition_par_sexe.png)
+
 b. Age Distribution:
 
 Analysis of the "age" variable shows that over 75% of victims were between 70 and 90 years old, with an average age of about 76. This heavily right-skewed distribution indicates that Shipman primarily targeted elderly individuals, often considered to be at the end of life, which made his actions more difficult to detect. People under 60 accounted for less than 5% of victims.
+
+![Graphique analyse](results/répartition_par_age.png)
 
 c. Temporal Evolution of Murders:
 
 The yearly distribution of deaths shows a progressive intensification of his killings: nearly 60% of deaths occurred in the last ten years (1988–1998), with a peak between 1995 and 1998. This increase in frequency reflects an escalation in his criminal behavior, possibly linked to a growing sense of impunity.
 
+![Graphique analyse](results/Evolution_temporelle_des_meurtres.png)
+
 d. Place of Death:
 
 More than 90% of deaths occurred at home, where Shipman had total control and the trust of his patients. This confirms that he acted in a controlled environment, thereby minimizing the risk of external suspicion or intervention by other healthcare professionals.
+
+![Graphique analyse](results/Lieu_de_décés.png)
 
 e. Time Distribution of Deaths: comparison between Shipman and other doctors
 
 The analysis of death times reveals a major behavioral anomaly. For patients of other general practitioners, deaths are relatively evenly distributed over 24 hours, with a natural slight concentration during the night and early morning, corresponding to typical geriatric mortality peaks.
 In contrast, for Harold Shipman's patients, over 60% of deaths occurred between 1 PM and 5 PM, right in the afternoon. This concentration has no medical justification and strongly contrasts with normal mortality curves. This artificial peak matches Shipman’s consultation hours, strongly suggesting he deliberately administered lethal substances during his visits.
 This repetitive time pattern constitutes a clear statistical anomaly. It could have been detected earlier through medical record monitoring or death certificate analysis. This data point is one of the key clues that helped confirm the intentionality of the murders.
+
+![Graphique analyse](results/comparaison_horaire_décés.png)
+![Graphique analyse](results/densité_comparaison.png)
